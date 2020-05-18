@@ -59,3 +59,88 @@ body{
     background: #819CAF;
   }
     
+  .left-eye{
+    background: white;
+    z-index: 3;
+    width: 30%;
+    height: 33%;
+    position: absolute;
+    left: 22%;
+    top: 27%;
+    border-radius: 50%;
+  }
+  .right-eye{
+    background: white;
+    width: 30%;
+    height: 33%;
+    position: absolute;
+    right: 22%;
+    top: 27%;
+    z-index: 3;
+    border-radius: 50%;
+  }
+  .pupil{
+    position: absolute;
+    width: 25%;
+    height: 27%;
+    top: 36.5%;
+    left: 37.5%;
+    background: #27354A;
+    border-radius: 50%;
+  }
+  .nose{
+    position: absolute;
+    background: #BE845F;
+    width: 24%;
+    height: 37%;
+    left:37.5%;
+    top: 50.5%;
+    z-index: 3;
+    border-radius: 50px;
+    
+  }
+  .left-hair{
+    -webkit-clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    background: #A6BECF;
+    position: absolute;
+    width: 10%;
+    height: 10%;
+    top: -7%;
+    left: 32.5%;
+    
+  }
+  .right-hair{
+    -webkit-clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    background:#A6BECF;
+    position: absolute;
+    width: 10%;
+    height: 10%;
+    top: -4%;
+    right: 37.5%;
+  }
+  
+  .wink{
+    position: absolute;
+    background: white;
+    width: 80%;
+    height: 82%;
+    top: 40%;
+    left: 12%;
+    border-radius: 50%;
+   
+  }
+  #anim{
+    animation-name:wink;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+  }
+  @keyframes wink {
+    0% {
+      opacity: 1;
+    }
+    50%{
+      opacity: 0;
+    }
+  }
